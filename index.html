@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mirai-Education</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/mirai-circle.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><span><img src="img/mirai-circle.png" alt=""
+                        style="width:100px;"></span>Mirai-Institute</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Blogs</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+
+                <!-- Language Dropdown -->
+                <div id="google_translate_element"></div>
+
+                <!-- Google Translate Initialization -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                            { pageLanguage: 'en' }, // Set your default page language
+                            'google_translate_element'
+                        );
+                    }
+                </script>
+                <script
+                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                <!-- Custom CSS -->
+                <style>
+                    #google_translate_element {
+                        margin: 10px 0;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 20px;
+                        width: 130px;
+                    }
+
+                    #google_translate_element select {
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 14px;
+                    }
+
+                    .goog-te-gadget {
+                        font-size: 0px;
+                    }
+                </style>
+
+
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Achieve Academic
+                                    Excellence in Japan</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Welcome to Your Gateway to Japan!
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Unlock a world of possibilities in Japan with our
+                                    expert guidance and tailored solutions. Whether you dream of studying, working, or
+                                    building a life in this vibrant country, we’re here to make it happen.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                    More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/black-white-portrait-friends.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Shape Your Career in
+                                    Japan</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Study & Work in Japan</h1>
+                                <p class="fs-5 text-white mb-4 pb-2"><i class="fa fa-arrow-right ms-3"></i> Unlock
+                                    exciting job opportunities in one of the world’s leading economies. <br><i
+                                        class="fa fa-arrow-right ms-3"></i> Get professional support with job
+                                    applications, resumes, and interviews. <br>
+                                    <i class="fa fa-arrow-right ms-3"></i> Achieve your career goals while experiencing
+                                    Japan’s unique work culture.
+                                </p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                    More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled Instructors</h5>
+                            <p>Learn from experts with real-world experience and deep knowledge of Japanese systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Online Classes</h5>
+                            <p>Access flexible, interactive sessions designed to fit your schedule anytime, anywhere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Personalized Support</h5>
+                            <p>Receive tailored guidance to match your unique goals and aspirations for Japan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Strong Documentation</h5>
+                            <p>Ensure a hassle-free process with perfectly crafted and verified documents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute img-mirai" src="img/mirai-circle.png" alt=""
+                            style="object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to Mirai-Institute</h1>
+                    <p class="mb-4">At Mirai-Institute of Language, we pride ourselves on being a dedicated team of
+                        professionals who are passionate about connecting people with life-changing opportunities in
+                        Japan. With years of experience and in-depth knowledge of Japanese culture, education, and
+                        immigration systems, we have successfully helped countless clients achieve their goals.</p>
+                    <p class="mb-4">Our mission is simple: To make your journey to Japan as seamless, informed, and
+                        rewarding as possible.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Professional Certificate
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Extensive Network</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Affordable and
+                                Transparent Pricing</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Tailored Support</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <!-- <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Courses Categories</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Web Design</h5>
+                                    <small class="text-primary">49 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Graphic Design</h5>
+                                    <small class="text-primary">49 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Video Editing</h5>
+                                    <small class="text-primary">49 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0">Online Marketing</h5>
+                            <small class="text-primary">49 Courses</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Destinations</h6>
+                <h1 class="mb-5">Popular Cities</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-cities" src="img/tokyo.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
+                                    TOKYO</h3>
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <h5 class="mb-4"> The city offers world-class universities and a multicultural environment,
+                                along with vibrant entertainment and culinary scenes to enjoy during your stay.</h5>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-cities" src="img/osaka.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
+                                    OSAKA</h3>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <h5 class="mb-4">A friendly city with affordable living, world-class universities, vibrant
+                                culture, and amazing food, perfect for international students.</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-cities" src="img/hokkaido.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
+                                    HIROSHIMA</h3>
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <h5 class="mb-4">A peaceful and affordable city, rich in history and culture, providing a
+                                unique and meaningful learning environment for students.</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <!-- ---voicestart--- -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute img-mirai-cm" src="img/chairman.jpg" alt=""
+                            style="object-fit:cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Vision of Chairman</h6>
+                    <h1 class="mb-4">Guiding the Path to Excellence</h1>
+                    <p class="mb-4">At Mirai Education, we believe in shaping a brighter future for our students through
+                        innovative learning experiences and personalized guidance. As Chairman, I am deeply committed to
+                        fostering an environment where every student can thrive, not only academically but also
+                        personally and professionally.
+
+                        With a strong emphasis on collaboration, excellence, and inclusivity, Mirai Education aims to
+                        bridge the gap between education and real-world opportunities. Our vision is to empower students
+                        with knowledge, creativity, and skills that prepare them to succeed in an increasingly
+                        interconnected global society.
+
+                        Together, we strive to create a supportive community that nurtures growth, encourages
+                        exploration, and instills confidence for a successful journey ahead.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- voiceend -->
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Teams</h6>
+                <h1 class="mb-5">Our Experts</h1>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/bishwo.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Bishwojit Deuja</h5>
+                            <small>Managing Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/bishwo.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Nabin Darnal</h5>
+                            <small>Vice-Chairman</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Januka Thapa</h5>
+                            <small>Instructor</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Colleges & Universities</h6>
+                <h1 class="mb-5">Trusted by top institutions</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/shin ai.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Shin-ai Institute of Languages</h5>
+                    <p>Osaka</p>
+                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                        <p class="mb-0">A leading institution in Japan, specializing in Japanese language education and
+                            cultural immersion, preparing students for academic and career success.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/mirai-nihongo.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">MIRAI Japanese Language School</h5>
+                    <p>Osaka</p>
+                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                        <p class="mb-0">Known for its supportive environment and experienced instructors, the school
+                            focuses on helping students develop strong communication skills and cultural understanding
+                            to succeed in both academic and professional settings.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/senda.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sendagaya Japanese Institute</h5>
+                    <p>Tokyo</p>
+                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                        <p class="mb-0">Sendagaya Japanese Institute is a prestigious language school in Tokyo, Japan,
+                            offering high-quality Japanese language education to international students.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/kfla.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Kyushu Foreign Language Academy</h5>
+                    <p>Fukuoka</p>
+                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                        <p class="mb-0">KFLA is a well-regarded language school located in Fukuoka, Japan. It provides
+                            intensive language courses for international students, focusing on practical communication
+                            skills and cultural immersion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-black text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="help.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Itahari, Sunsari Nepal</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9862399594</p>
+                    <p class="mb-2 d-flex"><i class="fa fa-envelope me-3"></i>miraiinstitueoflanguage@gmail.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/osaka.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/bishwo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/tokyo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/black-white-portrait-friends.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Social Media</h4>
+                    <p>Join us on Social Media for Latest News and Information</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2024 <a class="border-bottom" href="#"> Mirai Institute of Language</a>, All Right
+                        Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="privacy.html">Privacy & Policy</a>
+                            <a href="help.html">Help & FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- translatescript -->
+
+
+</body>
+
+</html>
