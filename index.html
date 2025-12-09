@@ -2,21 +2,52 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags for SEO -->
     <meta charset="utf-8">
-    <title>Mirai-Education</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
+    <title>Mirai Institute - Gateway to Education & Career Opportunities in Japan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Japan education, Japanese language school, study in Japan, work in Japan, Mirai Institute, Japan visa assistance, AI resume generator">
+    <meta name="description" content="Mirai Institute helps students achieve academic excellence in Japan with expert guidance, language courses, and career support. Includes AI Resume Generator tool.">
+    <meta name="author" content="Mirai Institute">
+    <meta property="og:title" content="Mirai Institute - Gateway to Japan Education & Career">
+    <meta property="og:description" content="Professional guidance for studying and working in Japan with AI-powered resume tools.">
+    <meta property="og:image" content="img/mirai-circle.png">
+    <meta property="og:url" content="https://mirai-institute.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mirai-institute.com">
+    
     <!-- Favicon -->
-    <link href="img/mirai-circle.ico" rel="icon">
+    <link href="img/mirai-circle.ico" rel="icon" type="image/x-icon">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Mirai Institute",
+        "description": "Professional guidance for studying and working in Japan",
+        "url": "https://mirai-institute.com",
+        "logo": "https://mirai-institute.com/img/mirai-circle.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Itahari",
+            "addressRegion": "Sunsari",
+            "addressCountry": "Nepal"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+977-9862399594",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,573 +62,884 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Additional CSS for AI Resume Generator Promotion -->
+    <style>
+        .ai-promotion {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .ai-promotion h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .ai-promotion .btn-light {
+            background: white;
+            color: #667eea;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .ai-promotion .btn-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .badge-new {
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        /* Enhanced SEO and Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #007bff;
+            color: white;
+            padding: 8px;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Improved image styling for SEO */
+        .img-cities {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .img-mirai {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+        
+        .img-mirai-cm {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        /* Language dropdown styling */
+        #google_translate_element {
+            margin: 10px 0;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            width: 150px;
+        }
+        
+        #google_translate_element select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .goog-te-gadget {
+            font-size: 0px;
+        }
+        
+        /* Breadcrumb for better navigation */
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+        
+        /* Optimized headings hierarchy */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .ai-promotion {
+                padding: 20px;
+                margin: 20px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Accessibility: Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><span><img src="img/mirai-circle.png" alt=""
-                        style="width:100px;"></span>Mirai-Institute</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Gallery</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Blogs</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h1 class="m-0 text-primary">
+                    <img src="img/mirai-circle.png" alt="Mirai Institute Logo" width="100" height="100" class="me-2">
+                    Mirai Institute
+                </h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="courses.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="team.html" class="dropdown-item">Blogs</a>
+                            <!-- Added AI Resume Generator link in dropdown -->
+                            <a href="https://distrya.com/tools/ai-resume-generator" class="dropdown-item" target="_blank" rel="noopener">AI Resume Generator <span class="badge-new">New</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 
-
-                <!-- Language Dropdown -->
-                <div id="google_translate_element"></div>
-
-                <!-- Google Translate Initialization -->
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            { pageLanguage: 'en' }, // Set your default page language
-                            'google_translate_element'
-                        );
-                    }
-                </script>
-                <script
-                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                <!-- Custom CSS -->
-                <style>
-                    #google_translate_element {
-                        margin: 10px 0;
-                        padding: 5px;
-                        text-align: center;
-                        font-size: 20px;
-                        width: 130px;
-                    }
-
-                    #google_translate_element select {
-                        width: 100%;
-                        padding: 5px;
-                        font-size: 14px;
-                    }
-
-                    .goog-te-gadget {
-                        font-size: 0px;
-                    }
-                </style>
-
-
+                    <!-- Language Dropdown -->
+                    <li class="nav-item">
+                        <div id="google_translate_element" aria-label="Language Translator"></div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-
     </nav>
     <!-- Navbar End -->
 
+    <!-- Breadcrumb Navigation -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Achieve Academic
-                                    Excellence in Japan</h5>
-                                <h1 class="display-3 text-white animated slideInDown">Welcome to Your Gateway to Japan!
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Unlock a world of possibilities in Japan with our
-                                    expert guidance and tailored solutions. Whether you dream of studying, working, or
-                                    building a life in this vibrant country, we’re here to make it happen.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                                    More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/black-white-portrait-friends.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Shape Your Career in
-                                    Japan</h5>
-                                <h1 class="display-3 text-white animated slideInDown">Study & Work in Japan</h1>
-                                <p class="fs-5 text-white mb-4 pb-2"><i class="fa fa-arrow-right ms-3"></i> Unlock
-                                    exciting job opportunities in one of the world’s leading economies. <br><i
-                                        class="fa fa-arrow-right ms-3"></i> Get professional support with job
-                                    applications, resumes, and interviews. <br>
-                                    <i class="fa fa-arrow-right ms-3"></i> Achieve your career goals while experiencing
-                                    Japan’s unique work culture.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                                    More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                            <h5 class="mb-3">Skilled Instructors</h5>
-                            <p>Learn from experts with real-world experience and deep knowledge of Japanese systems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <h5 class="mb-3">Online Classes</h5>
-                            <p>Access flexible, interactive sessions designed to fit your schedule anytime, anywhere.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                            <h5 class="mb-3">Personalized Support</h5>
-                            <p>Receive tailored guidance to match your unique goals and aspirations for Japan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                            <h5 class="mb-3">Strong Documentation</h5>
-                            <p>Ensure a hassle-free process with perfectly crafted and verified documents.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute img-mirai" src="img/mirai-circle.png" alt=""
-                            style="object-fit:cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to Mirai-Institute</h1>
-                    <p class="mb-4">At Mirai-Institute of Language, we pride ourselves on being a dedicated team of
-                        professionals who are passionate about connecting people with life-changing opportunities in
-                        Japan. With years of experience and in-depth knowledge of Japanese culture, education, and
-                        immigration systems, we have successfully helped countless clients achieve their goals.</p>
-                    <p class="mb-4">Our mission is simple: To make your journey to Japan as seamless, informed, and
-                        rewarding as possible.</p>
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Professional Certificate
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Extensive Network</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Affordable and
-                                Transparent Pricing</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Tailored Support</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Categories Start -->
-    <!-- <div class="container-xxl py-5 category">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
-                                    <small class="text-primary">49 Courses</small>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Carousel Start -->
+        <section class="container-fluid p-0 mb-5" aria-label="Featured slides">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="Beautiful Kyoto city temple at twilight in Japan" loading="lazy">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-sm-10 col-lg-8">
+                                    <h2 class="text-primary text-uppercase mb-3 animated slideInDown">Achieve Academic Excellence in Japan</h2>
+                                    <h1 class="display-3 text-white animated slideInDown">Welcome to Your Gateway to Japan!</h1>
+                                    <p class="fs-5 text-white mb-4 pb-2">Unlock a world of possibilities in Japan with our expert guidance and tailored solutions. Whether you dream of studying, working, or building a life in this vibrant country, we're here to make it happen.</p>
+                                    <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                    <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/black-white-portrait-friends.jpg" alt="Group of friends studying together" loading="lazy">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-sm-10 col-lg-8">
+                                    <h2 class="text-primary text-uppercase mb-3 animated slideInDown">Shape Your Career in Japan</h2>
+                                    <h1 class="display-3 text-white animated slideInDown">Study & Work in Japan</h1>
+                                    <ul class="fs-5 text-white mb-4 pb-2">
+                                        <li>Unlock exciting job opportunities in one of the world's leading economies.</li>
+                                        <li>Get professional support with job applications, resumes, and interviews.</li>
+                                        <li>Achieve your career goals while experiencing Japan's unique work culture.</li>
+                                    </ul>
+                                    <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                    <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Carousel End -->
+
+       <!-- AI Resume Generator Promotion Section -->
+<section class="container-xxl py-5" aria-label="AI Resume Generator">
+    <div class="container">
+        <div class="ai-promotion">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge-new mb-2">Featured Tool</span>
+                    <h3 class="mb-3"><i class="fas fa-robot me-2"></i>Create Your Professional Resume with AI in Minutes</h3>
+                    <p class="mb-4">Powered by <strong>Distrya.com</strong> - Generate ATS-friendly, professionally designed resumes that help you stand out in Japan's competitive job market and beyond.</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-bolt text-warning"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">AI-Powered Content</h6>
+                                    <p class="small mb-0">Smart suggestions & optimization</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-shield-alt text-success"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">ATS Optimized</h6>
+                                    <p class="small mb-0">Passes automated screening systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-globe-asia text-info"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Japan-Ready Templates</h6>
+                                    <p class="small mb-0">Customized for Japanese employers</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-file-export text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Multi-Format Export</h6>
+                                    <p class="small mb-0">PDF, Word, and online sharing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats d-flex">
+                        <div class="stat-item me-4">
+                            <h4 class="mb-0">10,000+</h4>
+                            <small>Resumes Created</small>
+                        </div>
+                        <div class="stat-item me-4">
+                            <h4 class="mb-0">98%</h4>
+                            <small>Success Rate</small>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="mb-0">50+</h4>
+                            <small>Professional Templates</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <div class="promotion-card p-4 rounded">
+                        <div class="mb-4">
+                            <i class="fas fa-crown fa-3x text-warning mb-3"></i>
+                            <h4 class="mb-2">Free AI Resume Builder</h4>
+                            <p class="small mb-0">Powered by Distrya.com</p>
+                        </div>
+                        
+                        <a href="https://distrya.com/tools/ai-resume-generator" 
+                           class="btn btn-light btn-lg w-100 mb-3 fw-bold"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <i class="fas fa-play-circle me-2"></i>Start Creating Free
+                        </a>
+                        
+                        <div class="d-grid gap-2">
+                            <a href="https://distrya.com" 
+                               class="btn btn-outline-light btn-sm"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt me-1"></i>Explore Distrya.com
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
-                                    <small class="text-primary">49 Courses</small>
+                        
+                        <hr class="my-3">
+                        
+                        <div class="testimonial small">
+                            <p class="mb-2"><i class="fas fa-quote-left text-muted me-1"></i>Got my dream job in Tokyo with a resume made on Distrya!</p>
+                            <p class="text-muted mb-0">- Yuta S., Osaka</p>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2">4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .ai-promotion {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4c51bf 100%);
+        color: white;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 50px 0;
+        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .ai-promotion::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 100%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.3;
+        animation: float 20s linear infinite;
+    }
+    
+    @keyframes float {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        100% { transform: translate(-20px, -20px) rotate(360deg); }
+    }
+    
+    .ai-promotion h3 {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    
+    .promotion-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .ai-promotion .btn-light {
+        background: white;
+        color: #667eea;
+        font-weight: 600;
+        padding: 15px 30px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .ai-promotion .btn-light:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        color: #4c51bf;
+    }
+    
+    .ai-promotion .btn-outline-light {
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .ai-promotion .btn-outline-light:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: white;
+    }
+    
+    .badge-new {
+        background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+        color: white;
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .stats {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .stat-item h4 {
+        font-weight: 700;
+        color: white;
+    }
+    
+    .stat-item small {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    
+    .rating {
+        color: white;
+        font-size: 0.9rem;
+    }
+    
+    .testimonial {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 3px solid #ffd700;
+    }
+    
+    @media (max-width: 768px) {
+        .ai-promotion {
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .stats {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .stat-item {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
+        <!-- Service Start -->
+        <section class="container-xxl py-5" aria-label="Our Services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title bg-white text-center text-primary px-3 d-inline-block">Our Services</h2>
+                    <h1 class="mb-4">What We Offer</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item text-center pt-3 h-100">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-graduation-cap text-primary mb-4" aria-hidden="true"></i>
+                                <h3 class="h5 mb-3">Skilled Instructors</h3>
+                                <p>Learn from experts with real-world experience and deep knowledge of Japanese systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item text-center pt-3 h-100">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4" aria-hidden="true"></i>
+                                <h3 class="h5 mb-3">Online Classes</h3>
+                                <p>Access flexible, interactive sessions designed to fit your schedule anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item text-center pt-3 h-100">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-home text-primary mb-4" aria-hidden="true"></i>
+                                <h3 class="h5 mb-3">Personalized Support</h3>
+                                <p>Receive tailored guidance to match your unique goals and aspirations for Japan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item text-center pt-3 h-100">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-file-alt text-primary mb-4" aria-hidden="true"></i>
+                                <h3 class="h5 mb-3">Strong Documentation</h3>
+                                <p>Ensure a hassle-free process with perfectly crafted and verified documents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+
+        <!-- About Start -->
+        <section class="container-xxl py-5" aria-label="About Us">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute img-mirai" src="img/mirai-circle.png" alt="Mirai Institute logo" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="section-title bg-white text-start text-primary pe-3">About Us</h2>
+                        <h1 class="mb-4">Welcome to Mirai Institute</h1>
+                        <p class="mb-4">At Mirai Institute of Language, we pride ourselves on being a dedicated team of professionals who are passionate about connecting people with life-changing opportunities in Japan.</p>
+                        <p class="mb-4">Our mission is simple: To make your journey to Japan as seamless, informed, and rewarding as possible.</p>
+                        <div class="row gy-2 gx-4 mb-4">
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Professional Certificate</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Extensive Network</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Affordable and Transparent Pricing</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i class="fa fa-arrow-right text-primary me-2"></i>Tailored Support</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Courses Start -->
+        <section class="container-xxl py-5" aria-label="Popular Destinations">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="section-title bg-white text-center text-primary px-3">Destinations</h2>
+                    <h1 class="mb-5">Popular Cities in Japan</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <article class="course-item bg-light h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-cities" src="img/tokyo.jpg" alt="Tokyo cityscape" loading="lazy">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <h3 class="flex-shrink-0 btn-primary px-3" style="border-radius: 30px;color:#fff;">TOKYO</h3>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="h5 mb-4">Japan's Capital City</h3>
+                                <p>The city offers world-class universities and a multicultural environment, along with vibrant entertainment and culinary scenes to enjoy during your stay.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <article class="course-item bg-light h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-cities" src="img/osaka.jpg" alt="Osaka city view" loading="lazy">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <h3 class="flex-shrink-0 btn-primary px-3" style="border-radius: 30px;color:#fff;">OSAKA</h3>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="h5 mb-4">Cultural Hub of Japan</h3>
+                                <p>A friendly city with affordable living, world-class universities, vibrant culture, and amazing food, perfect for international students.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <article class="course-item bg-light h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-cities" src="img/hokkaido.jpg" alt="Hiroshima peace memorial" loading="lazy">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <h3 class="flex-shrink-0 btn-primary px-3" style="border-radius: 30px;color:#fff;">HIROSHIMA</h3>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="h5 mb-4">City of Peace</h3>
+                                <p>A peaceful and affordable city, rich in history and culture, providing a unique and meaningful learning environment for students.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
-                            <small class="text-primary">49 Courses</small>
+            </div>
+        </section>
+        <!-- Courses End -->
+
+        <!-- Chairman's Vision Start -->
+        <section class="container-xxl py-5" aria-label="Chairman's Vision">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute img-mirai-cm" src="img/chairman.jpg" alt="Mirai Institute Chairman" loading="lazy">
                         </div>
-                    </a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="section-title bg-white text-start text-primary pe-3">Vision of Chairman</h2>
+                        <h1 class="mb-4">Guiding the Path to Excellence</h1>
+                        <p class="mb-4">At Mirai Education, we believe in shaping a brighter future for our students through innovative learning experiences and personalized guidance.</p>
+                        <p class="mb-4">With a strong emphasis on collaboration, excellence, and inclusivity, Mirai Education aims to bridge the gap between education and real-world opportunities. Our vision is to empower students with knowledge, creativity, and skills that prepare them to succeed in an increasingly interconnected global society.</p>
+                        <p class="mb-4">Together, we strive to create a supportive community that nurtures growth, encourages exploration, and instills confidence for a successful journey ahead.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> -->
-    <!-- Categories Start -->
+        </section>
+        <!-- Chairman's Vision End -->
 
-
-    <!-- Courses Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Destinations</h6>
-                <h1 class="mb-5">Popular Cities</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-cities" src="img/tokyo.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
-                                    TOKYO</h3>
-
+        <!-- AI Resume Generator CTA Section -->
+        <section class="container-xxl py-5 bg-light" aria-label="Career Tools">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-primary mb-3">Prepare Your Career Documents</h2>
+                        <p class="lead mb-4">Get job-ready with professional resumes optimized for the Japanese job market. Our AI Resume Generator helps create ATS-friendly resumes that stand out.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> AI-Powered Content Suggestions</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Japanese-Style Templates</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Export to PDF & Word</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> ATS Optimization</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Professional Examples</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Free to Use</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0"></h3>
-                            <h5 class="mb-4"> The city offers world-class universities and a multicultural environment,
-                                along with vibrant entertainment and culinary scenes to enjoy during your stay.</h5>
-                        </div>
-                        <!--  -->
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="https://distrya.com/tools/ai-resume-generator" class="btn btn-primary btn-lg px-5 py-3" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt me-2"></i>Create AI Resume
+                        </a>
+                        <p class="small mt-3">Try our free AI Resume Generator today!</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-cities" src="img/osaka.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
-                                    OSAKA</h3>
+            </div>
+        </section>
+
+        <!-- Team Start -->
+        <section class="container-xxl py-5" aria-label="Our Team">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="section-title bg-white text-center text-primary px-3">Teams</h2>
+                    <h1 class="mb-5">Our Experts</h1>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light h-100">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/bishwo.jpg" alt="Bishwojit Deuja - Managing Director" loading="lazy">
+                            </div>
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="h5 mb-0">Bishwojit Deuja</h3>
+                                <p class="text-muted">Managing Director</p>
                             </div>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0"></h3>
-                            <h5 class="mb-4">A friendly city with affordable living, world-class universities, vibrant
-                                culture, and amazing food, perfect for international students.</h5>
-                        </div>
-
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-cities" src="img/hokkaido.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <h3 class="flex-shrink-0  btn-primary px-3" style="border-radius: 30px;color:#fff;">
-                                    HIROSHIMA</h3>
-
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light h-100">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/IMG_0475.jpeg" alt="Nabin Darnal - Vice-Chairman" loading="lazy">
+                            </div>
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="h5 mb-0">Nabin Darnal</h3>
+                                <p class="text-muted">Vice-Chairman</p>
                             </div>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0"></h3>
-                            <h5 class="mb-4">A peaceful and affordable city, rich in history and culture, providing a
-                                unique and meaningful learning environment for students.</h5>
-                        </div>
-
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Courses End -->
-
-    <!-- ---voicestart--- -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute img-mirai-cm" src="img/chairman.jpg" alt=""
-                            style="object-fit:cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">Vision of Chairman</h6>
-                    <h1 class="mb-4">Guiding the Path to Excellence</h1>
-                    <p class="mb-4">At Mirai Education, we believe in shaping a brighter future for our students through
-                        innovative learning experiences and personalized guidance. As Chairman, I am deeply committed to
-                        fostering an environment where every student can thrive, not only academically but also
-                        personally and professionally.
-
-                        With a strong emphasis on collaboration, excellence, and inclusivity, Mirai Education aims to
-                        bridge the gap between education and real-world opportunities. Our vision is to empower students
-                        with knowledge, creativity, and skills that prepare them to succeed in an increasingly
-                        interconnected global society.
-
-                        Together, we strive to create a supportive community that nurtures growth, encourages
-                        exploration, and instills confidence for a successful journey ahead.</p>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- voiceend -->
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Teams</h6>
-                <h1 class="mb-5">Our Experts</h1>
-            </div>
-            <div class="row g-3 justify-content-center">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/bishwo.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light h-100">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/teach.jpg" alt="Januka Thapa - Instructor" loading="lazy">
+                            </div>
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="#" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="h5 mb-0">Januka Thapa</h3>
+                                <p class="text-muted">Instructor</p>
                             </div>
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Bishwojit Deuja</h5>
-                            <small>Managing Director</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/IMG_0475.jpeg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Nabin Darnal</h5>
-                            <small>Vice-Chairman</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/teach.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Januka Thapa</h5>
-                            <small>Instructor</small>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Colleges & Universities</h6>
-                <h1 class="mb-5">Trusted by top institutions</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/shin ai.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Shin-ai Institute of Languages</h5>
-                    <p>Osaka</p>
-                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
-                        <p class="mb-0">A leading institution in Japan, specializing in Japanese language education and
-                            cultural immersion, preparing students for academic and career success.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/mirai-nihongo.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">MIRAI Japanese Language School</h5>
-                    <p>Osaka</p>
-                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
-                        <p class="mb-0">Known for its supportive environment and experienced instructors, the school
-                            focuses on helping students develop strong communication skills and cultural understanding
-                            to succeed in both academic and professional settings.
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/senda.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Sendagaya Japanese Institute</h5>
-                    <p>Tokyo</p>
-                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
-                        <p class="mb-0">Sendagaya Japanese Institute is a prestigious language school in Tokyo, Japan,
-                            offering high-quality Japanese language education to international students.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/kfla.png"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Kyushu Foreign Language Academy</h5>
-                    <p>Fukuoka</p>
-                    <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
-                        <p class="mb-0">KFLA is a well-regarded language school located in Fukuoka, Japan. It provides
-                            intensive language courses for international students, focusing on practical communication
-                            skills and cultural immersion.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+        </section>
+        <!-- Team End -->
 
+        <!-- Testimonial Start -->
+        <section class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" aria-label="Partner Institutions">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title bg-white text-center text-primary px-3">Colleges & Universities</h2>
+                    <h1 class="mb-5">Trusted by Top Institutions</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel position-relative">
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/shin ai.jpg" alt="Shin-ai Institute logo" style="width: 80px; height: 80px;" loading="lazy">
+                        <h3 class="h5 mb-0">Shin-ai Institute of Languages</h3>
+                        <p class="text-muted">Osaka</p>
+                        <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                            <p class="mb-0">A leading institution in Japan, specializing in Japanese language education and cultural immersion, preparing students for academic and career success.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/mirai-nihongo.jpg" alt="Mirai Japanese Language School logo" style="width: 80px; height: 80px;" loading="lazy">
+                        <h3 class="h5 mb-0">MIRAI Japanese Language School</h3>
+                        <p class="text-muted">Osaka</p>
+                        <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                            <p class="mb-0">Known for its supportive environment and experienced instructors, focusing on helping students develop strong communication skills and cultural understanding.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/senda.jpg" alt="Sendagaya Japanese Institute logo" style="width: 80px; height: 80px;" loading="lazy">
+                        <h3 class="h5 mb-0">Sendagaya Japanese Institute</h3>
+                        <p class="text-muted">Tokyo</p>
+                        <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                            <p class="mb-0">A prestigious language school in Tokyo, Japan, offering high-quality Japanese language education to international students.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/kfla.png" alt="Kyushu Foreign Language Academy logo" style="width: 80px; height: 80px;" loading="lazy">
+                        <h3 class="h5 mb-0">Kyushu Foreign Language Academy</h3>
+                        <p class="text-muted">Fukuoka</p>
+                        <div class="testimonial-text bg-light text-center p-4" style="height:200px;">
+                            <p class="mb-0">KFLA provides intensive language courses for international students, focusing on practical communication skills and cultural immersion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial End -->
+    </main>
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-black text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <footer class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" aria-label="Site footer">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="help.html">FAQs & Help</a>
+                    <h3 class="text-white mb-3">Quick Link</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-link" href="about.html">About Us</a></li>
+                        <li><a class="btn btn-link" href="contact.html">Contact Us</a></li>
+                        <li><a class="btn btn-link" href="terms.html">Terms & Condition</a></li>
+                        <li><a class="btn btn-link" href="help.html">FAQs & Help</a></li>
+                        <li><a class="btn btn-link" href="https://distrya.com/tools/ai-resume-generator" target="_blank" rel="noopener">AI Resume Generator</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Itahari, Sunsari Nepal</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9862399594</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+81 080-1502-9162</p>
-                    <p class="mb-2 d-flex"><i class="fa fa-envelope me-3"></i>miraiinstitueoflanguage@gmail.com</p>
-
+                    <h3 class="text-white mb-3">Contact</h3>
+                    <address>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Itahari, Sunsari Nepal</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9862399594</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+81 080-1502-9162</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>miraiinstituteoflanguage@gmail.com</p>
+                    </address>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
+                    <h3 class="text-white mb-3">Gallery</h3>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="Kyoto temple" loading="lazy">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/osaka.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/osaka.jpg" alt="Osaka city" loading="lazy">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/bishwo.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/bishwo.jpg" alt="Team member" loading="lazy">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/tokyo.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/tokyo.jpg" alt="Tokyo city" loading="lazy">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/black-white-portrait-friends.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/black-white-portrait-friends.jpg" alt="Students studying" loading="lazy">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/shin ai.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/shin ai.jpg" alt="Partner institute" loading="lazy">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Social Media</h4>
+                    <h3 class="text-white mb-3">Social Media</h3>
                     <p>Join us on Social Media for Latest News and Information</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://x.com/institutemirai?s=21"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61572012297666"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://line.me/ti/p/Dq2FYPtMqz"><i class="fab fa-line"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/institutemirai?s=21" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61572012297666" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://line.me/ti/p/Dq2FYPtMqz" aria-label="Line"><i class="fab fa-line"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="text-white mb-3">Career Tools</h4>
+                        <a href="https://distrya.com/tools/ai-resume-generator" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
+                            <i class="fas fa-robot me-1"></i> AI Resume Generator
+                        </a>
                     </div>
                 </div>
             </div>
@@ -606,28 +948,24 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        Copyright&copy; 2024 <a class="border-bottom" href="#"> Mirai Institute of Language</a>, All Right
-                        Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Copyright&copy; 2024 <a class="border-bottom" href="index.html"> Mirai Institute of Language</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="index.html">Home</a>
                             <a href="privacy.html">Privacy & Policy</a>
-                            <a href="help.html">Help & FQAs</a>
+                            <a href="help.html">Help & FAQs</a>
+                            <a href="https://distrya.com/tools/ai-resume-generator" target="_blank" rel="noopener">AI Tools</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -640,10 +978,40 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <!-- translatescript -->
-
-
+    <!-- SEO Optimization Script -->
+    <script>
+        // Lazy loading for images
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            
+            if ('loading' in HTMLImageElement.prototype) {
+                // Browser supports native lazy loading
+                const lazyImages = Array.from(images);
+                lazyImages.forEach(img => {
+                    img.loading = 'lazy';
+                });
+            }
+            
+            // Track outbound links for analytics
+            document.querySelectorAll('a[href^="https://distrya.com"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // You can add analytics tracking here
+                    console.log('AI Resume Generator link clicked');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
