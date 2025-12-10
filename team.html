@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags for SEO -->
     <meta charset="utf-8">
-    <title>Mirai-Education</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
+    <title>Success Stories - Mirai Institute Nepal - Nepalese Students in Japan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Nepalese students Japan success stories, Nepal to Japan success, Japanese study Nepal testimonials, Mirai Institute Nepal reviews">
+    <meta name="description" content="Read success stories of Nepalese students who achieved their dreams of studying and working in Japan through Mirai Institute Nepal.">
+    <meta name="author" content="Mirai Institute Nepal">
+    
     <!-- Favicon -->
-    <link href="img/mirai-circle.ico" rel="icon">
-
+    <link href="img/mirai-circle.ico" rel="icon" type="image/x-icon">
+    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,202 +31,525 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Nepal-Japan Theme CSS -->
+    <style>
+        :root {
+            --primary: #dc143c;
+            --secondary: #003893;
+            --accent: #ffcc00;
+            --light: #f8f9fa;
+            --dark: #222222;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nepali-font {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        /* Nepal-Japan Theme Header */
+        .theme-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg-all.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .success-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .success-story {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .success-story:hover {
+            transform: translateY(-5px);
+        }
+
+        .student-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+
+        .success-badge {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #ffcc00;
+        }
+
+        .quote-icon {
+            color: var(--primary);
+            font-size: 2rem;
+            opacity: 0.3;
+            margin-bottom: 10px;
+        }
+
+        /* Blog Post Style */
+        .blog-post {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            background: white;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-meta {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .read-more:hover {
+            color: var(--secondary);
+        }
+
+        /* Footer Nepal Theme */
+        .footer-nepal {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 0;
+            border-radius: 15px;
+            margin: 50px 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <!-- Nepal-Japan Theme Header -->
+    <div class="theme-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="nepali-font">
+                        <i class="fas fa-map-marker-alt me-2"></i>नेपाल बाट जापान अध्ययन र रोजगारीको लागि विश्वसनीय संस्था
+                    </span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span><i class="fas fa-phone-alt me-2"></i>+977-9862399594</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><span><img src="img/mirai-circle.png" alt=""
-                        style="width:100px;"></span>Mirai-Institute</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Gallery</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Blogs</a>
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <div class="logo-container" style="position: relative; margin-right: 15px;">
+                    <img src="img/mirai-circle.png" alt="Mirai Institute Nepal" width="50">
+                    <div class="logo-flag" style="position: absolute; bottom: -5px; right: -5px; width: 25px; height: 25px; border-radius: 50%; border: 2px solid white; background: linear-gradient(45deg, #dc143c, #003893);"></div>
+                </div>
+                <div>
+                    <h5 class="mb-0">Mirai Institute</h5>
+                    <small class="text-muted">Nepal to Japan Specialists</small>
+                </div>
+            </a>
+            
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="courses.html" class="nav-item nav-link">Gallery</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="team.html" class="dropdown-item">Success Stories</a>
+                            <a href="https://distrya.com/tools/ai-resume-generator" class="dropdown-item" target="_blank" rel="noopener">AI Resume Generator</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                    <!-- Language Translator -->
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Success Stories</h1>
+                    <p class="fs-5 text-white mb-4">नेपाली विद्यार्थीहरूको जापान यात्राका कथा</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Success Stories</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Success Stories Stats -->
+    <div class="container">
+        <div class="stats-section">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stat-number">500+</div>
+                    <h6>Students Helped</h6>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-number">98%</div>
+                    <h6>Visa Success Rate</h6>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-number">100+</div>
+                    <h6>In Japan Now</h6>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-number">4.9/5</div>
+                    <h6>Student Rating</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Stories Section -->
+    <div class="container-xxl py-5 success-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title bg-white text-center text-primary px-3 d-inline-block">Success Stories</h2>
+                    <h1 class="mb-4">Nepalese Students Thriving in Japan</h1>
+                    <p class="lead">Real stories from Nepalese students who made their Japan dreams come true</p>
+                </div>
+            </div>
+
+            <!-- Featured Success Stories -->
+            <!-- <div class="row">
+                <div class="col-lg-6">
+                    <div class="success-story">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/nepali-student1.jpg" alt="Ram Sharma - Software Engineer Tokyo" class="student-avatar me-3">
+                            <div>
+                                <span class="success-badge">Tokyo, Japan</span>
+                                <h5 class="mb-0">Ram Sharma</h5>
+                                <small class="text-muted">Software Engineer at Rakuten, Tokyo</small>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="nepali-font">"मिराई इन्स्टिच्युटको सहयोगबिना जापान आउन सकिन्थ्यो। उनीहरूले भिसा प्रक्रियाबाट जापान आइपुगेसम्म सबै सहयोग गरे। अहिले म टोकियोमा सफ्टवेयर इन्जिनियरको रूपमा काम गर्दैछु।"</p>
+                        <p>"Without Mirai Institute, coming to Japan wouldn't have been possible. They supported everything from visa process until I reached Japan. Now I'm working as a Software Engineer in Tokyo."</p>
+                        <div class="mt-3">
+                            <small class="text-muted">Bachelor in Computer Science, University of Tokyo (2022)</small>
+                        </div>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
+                <div class="col-lg-6">
+                    <div class="success-story">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/nepali-student2.jpg" alt="Sita Rai - Nursing Student Osaka" class="student-avatar me-3">
+                            <div>
+                                <span class="success-badge">Osaka, Japan</span>
+                                <h5 class="mb-0">Sita Rai</h5>
+                                <small class="text-muted">Nursing Student, Osaka University</small>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="nepali-font">"जापानी भाषा सिक्ने कक्षा धेरै राम्रो थियो। अहिले म जापानमा नर्सिङ्ग पढ्दैछु र पार्टटाइम काम गर्दैछु। मेरो सपना जापानमा नर्स बन्ने हो र म यो यात्रामा सफल हुँदैछु।"</p>
+                        <p>"The Japanese language classes were excellent. Now I'm studying nursing in Japan and working part-time. My dream is to become a nurse in Japan and I'm succeeding in this journey."</p>
+                        <div class="mt-3">
+                            <small class="text-muted">MEXT Scholarship Recipient, Osaka University (2023)</small>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
-
-                <!-- Language Dropdown -->
-                <div id="google_translate_element"></div>
-
-                <!-- Google Translate Initialization -->
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            { pageLanguage: 'en' }, // Set your default page language
-                            'google_translate_element'
-                        );
-                    }
-                </script>
-                <script
-                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                <!-- Custom CSS -->
-                <style>
-                    #google_translate_element {
-                        margin: 10px 0;
-                        padding: 5px;
-                        text-align: center;
-                        font-size: 20px;
-                        width: 130px;
-                    }
-
-                    #google_translate_element select {
-                        width: 100%;
-                        padding: 5px;
-                        font-size: 14px;
-                    }
-
-                    .goog-te-gadget {
-                        font-size: 0px;
-                    }
-                </style>
-
-
+            <!-- More Success Stories -->
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="success-story">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <span class="success-badge">Kyoto, Japan</span>
+                                <h5 class="mb-0">Hari Thapa</h5>
+                                <small class="text-muted">Hotel Manager, Kyoto</small>
+                            </div>
+                        </div>
+                        <p>"टोकियोको होटलमा काम गर्ने सपना साकार भयो। AI रिजुमी टुलले मलाई जापानी ढाँचामा रिजुमी बनाउन मद्दत गर्यो।"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="success-story">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <span class="success-badge">Fukuoka, Japan</span>
+                                <h5 class="mb-0">Anita Gurung</h5>
+                                <small class="text-muted">Japanese Translator</small>
+                            </div>
+                        </div>
+                        <p>"Mirai Institute helped me achieve JLPT N2 level. Now I work as a professional translator in Fukuoka. Their guidance was invaluable."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="success-story">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <span class="success-badge">Yokohama, Japan</span>
+                                <h5 class="mb-0">Rohan Shrestha</h5>
+                                <small class="text-muted">IT Engineer</small>
+                            </div>
+                        </div>
+                        <p class="nepali-font">"नेपालबाट जापान आउनु एउटा ठूलो निर्णय थियो। मिराईले मलाई हरेक चरणमा मद्दत गर्यो।"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
+            <!-- Blog/Articles Section -->
+            <div class="row mt-5">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title bg-white text-center text-primary px-3 d-inline-block">Latest Articles</h2>
+                    <h3 class="mb-4">Japan Study & Work Tips for Nepalese</h3>
+                </div>
+            </div>
 
-    </nav>
-<!-- nav end -->
-<main class="container my-5">
-    <div class="row align-items-center mb-5">
-        <div class="col-md-6 text-center">
-            <img src="img/class1.jpeg" alt="Japanese Language Class" class="img-fluid rounded shadow w-100">
-        </div>
-        <div class="col-md-6">
-            <h2 class="text-primary text-center">Start Your Japanese Language Journey with Us!</h2>
-            <p>We are thrilled to announce the commencement of our new Japanese language classes at Mirai Institute of Language. Whether you are a complete beginner or looking to enhance your existing skills, our courses are designed to suit learners of all levels.</p>
-            <p>Our expert instructors will guide you through interactive lessons, cultural insights, and practical communication skills to help you master the Japanese language effectively and enjoyably.</p>
-            <p>Don't miss this opportunity to explore the fascinating language and culture of Japan. Enroll now and take the first step toward your language goals!</p>
-            <div class="text-center">
-                <a href="contact.html" class="btn btn-primary mt-3">Contact Now</a>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="img/study.jpg" alt="Japanese language learning tips" loading="lazy">
+                        <div class="blog-content">
+                            <div class="blog-meta mb-2">
+                                <i class="far fa-calendar me-1"></i> Dec 15, 2024
+                                <i class="far fa-user ms-3 me-1"></i> By Mirai Team
+                            </div>
+                            <h5 class="mb-3">How to Prepare for JLPT as a Nepalese Student</h5>
+                            <p class="mb-3">Essential tips and strategies for Nepalese students to successfully pass JLPT exams for Japan study and work.</p>
+                            <a href="/article1.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="img/work-japan.jpg" alt="Working in Japan guide" loading="lazy">
+                        <div class="blog-content">
+                            <div class="blog-meta mb-2">
+                                <i class="far fa-calendar me-1"></i> Nov 30, 2024
+                                <i class="far fa-user ms-3 me-1"></i> By Mirai Team
+                            </div>
+                            <h5 class="mb-3">Japan Work Visa Guide for Nepalese Professionals</h5>
+                            <p class="mb-3">Complete guide to obtaining work visas in Japan for Nepalese IT, engineering, and healthcare professionals.</p>
+                            <a href="/article2.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="img/bg-all.jpg" alt="Studying in Japan guide" loading="lazy">
+                        <div class="blog-content">
+                            <div class="blog-meta mb-2">
+                                <i class="far fa-calendar me-1"></i> Nov 15, 2024
+                                <i class="far fa-user ms-3 me-1"></i> By Mirai Team
+                            </div>
+                            <h5 class="mb-3">MEXT Scholarship: Complete Guide for Nepalese Students</h5>
+                            <p class="mb-3">Step-by-step guide to apply for MEXT scholarship from Nepal for studying in Japanese universities.</p>
+                            <a href="/article3.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="row align-items-center mb-5">
-        <div class="col-md-6 text-center">
-            <img src="img/class2.jpeg" alt="Students Learning Japanese" class="img-fluid rounded shadow w-100">
-        </div>
-        <div class="col-md-6">
-            <h2 class="text-primary text-center">Why Choose Mirai Institute of Language?</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Experienced and Certified Japanese Instructors</li>
-                <li class="list-group-item">Interactive and Fun Learning Environment</li>
-                <li class="list-group-item">Flexible Class Schedules</li>
-                <li class="list-group-item">Comprehensive Study Materials</li>
-            </ul>
-            <p class="mt-3">At Mirai Institute of Language, we are dedicated to providing quality education and fostering a supportive learning community. Join us and experience the difference!</p>
+    <!-- AI Resume Generator CTA -->
+    <div class="container-xxl py-5" style="background: linear-gradient(135deg, #dc143c, #003893);">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-lg-start">
+                    <h2 class="text-white mb-3">Ready to Create Your Japan Success Story?</h2>
+                    <p class="text-white">Start with a professional Japanese-style resume using our AI Resume Generator</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="https://distrya.com/tools/ai-resume-generator" class="btn btn-light btn-lg px-5" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt me-2"></i>Create AI Resume
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <section id="enroll" class="text-center mt-5">
-        <h3 class="text-primary">Enroll Today!</h3>
-        <p>Classes start soon, so secure your spot today by contacting us or visiting our website. Let's embark on this exciting journey together!</p>
-    </section>
-</main>
-<!-- footer start -->
-    <div class="container-fluid bg-black text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- Footer Start -->
+    <footer class="container-fluid text-light footer pt-5 mt-5 wow fadeIn footer-nepal" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="help.html">FAQs & Help</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Itahari, Sunsari Nepal</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+81 080-1502-9162</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9862399594</p>
-                    <p class="mb-2 d-flex"><i class="fa fa-envelope me-3"></i>miraiinstitueoflanguage@gmail.com</p>
-
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/osaka.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/bishwo.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/tokyo.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/black-white-portrait-friends.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/class1.jpeg" alt="">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="img/mirai-circle.png" alt="Mirai Institute Nepal Logo" width="60" class="me-3">
+                        <div>
+                            <h4 class="text-white mb-0">Mirai Institute Nepal</h4>
+                            <small class="text-muted">Japan Specialists for Nepalese Students</small>
                         </div>
                     </div>
+                    <div class="nepal-office mb-4" style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #dc143c;">
+                        <h6 class="text-white mb-3"><i class="fas fa-map-marker-alt me-2"></i> Nepal Office</h6>
+                        <p class="text-muted mb-2">Itahari, Sunsari, Nepal</p>
+                        <p class="text-muted mb-2">Phone: +977-9862399594</p>
+                        <p class="text-muted mb-0">Email: miraiinstituteoflanguage@gmail.com</p>
+                    </div>
                 </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="index.html">Home</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="about.html">About Us</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="courses.html">Gallery</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="team.html">Success Stories</a>
+                </div>
+                
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Social Media</h4>
-                    <p>Join us on Social Media for Latest News and Information</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://x.com/institutemirai?s=21"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61572012297666"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://line.me/ti/p/Dq2FYPtMqz"><i class="fab fa-line"></i></a>
+                    <h5 class="text-white mb-4">Important Links</h5>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="terms.html">Terms & Conditions</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="https://distrya.com/tools/ai-resume-generator" target="_blank" rel="noopener">AI Resume Generator</a>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Start Your Journey</h5>
+                    <div class="mb-4">
+                        <a href="contact.html" class="btn btn-outline-light w-100 mb-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-headset me-2"></i> Free Consultation
+                        </a>
+                        <a href="tel:+9779862399594" class="btn btn-outline-light w-100 mb-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-phone-alt me-2"></i> Call Now
+                        </a>
+                        <a href="courses.html" class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-images me-2"></i> View Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5" style="border-color: #444;">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 Mirai Institute Nepal. All rights reserved. 
+                        <span class="nepali-font">नेपालबाट जापान अध्ययन र रोजगारीको लागि विश्वसनीय संस्था</span>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-inline">
+                        <a href="privacy.html" class="text-muted me-3">Privacy Policy</a>
+                        <a href="terms.html" class="text-muted me-3">Terms & Conditions</a>
+                        <a href="sitemap.html" class="text-muted">Sitemap</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        Copyright&copy; 2024 <a class="border-bottom" href="#"> Mirai Institute of Language</a>, All Right
-                        Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="index.html">Home</a>
-                            <a href="privacy.html">Privacy & Policy</a>
-                            <a href="help.html">Help & FQAs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -238,6 +561,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

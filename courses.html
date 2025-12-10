@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags for SEO -->
     <meta charset="utf-8">
-    <title>Mirai-Education</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
+    <title>Gallery - Mirai Institute Nepal - Japan Study & Work Photos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mirai Institute Nepal gallery, Nepalese students in Japan photos, Japan study Nepal, Japanese language class Nepal">
+    <meta name="description" content="View our gallery showcasing Nepalese students' journey to Japan, Japanese language classes, and success stories from Mirai Institute Nepal.">
+    <meta name="author" content="Mirai Institute Nepal">
+    
     <!-- Favicon -->
-    <link href="img/mirai-circle.ico" rel="icon">
-
+    <link href="img/mirai-circle.ico" rel="icon" type="image/x-icon">
+    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,257 +31,465 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Nepal-Japan Theme CSS -->
+    <style>
+        :root {
+            --primary: #dc143c;
+            --secondary: #003893;
+            --accent: #ffcc00;
+            --light: #f8f9fa;
+            --dark: #222222;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nepali-font {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        /* Nepal-Japan Theme Header */
+        .theme-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg-all.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .gallery-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .gallery-category {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(220, 20, 60, 0.9);
+            color: white;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        .gallery-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        /* Footer Nepal Theme */
+        .footer-nepal {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        /* Gallery Filter */
+        .gallery-filter {
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            border: 2px solid var(--primary);
+            background: white;
+            color: var(--primary);
+            padding: 8px 25px;
+            margin: 0 5px 10px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <!-- Nepal-Japan Theme Header -->
+    <div class="theme-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="nepali-font">
+                        <i class="fas fa-map-marker-alt me-2"></i>नेपाल बाट जापान अध्ययन र रोजगारीको लागि विश्वसनीय संस्था
+                    </span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span><i class="fas fa-phone-alt me-2"></i>+977-9862399594</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><span><img src="img/mirai-circle.png" alt=""
-                        style="width:100px;"></span>Mirai-Institute</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Gallery</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Blogs</a>
-                    </div>
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <div class="logo-container" style="position: relative; margin-right: 15px;">
+                    <img src="img/mirai-circle.png" alt="Mirai Institute Nepal" width="50">
+                    <div class="logo-flag" style="position: absolute; bottom: -5px; right: -5px; width: 25px; height: 25px; border-radius: 50%; border: 2px solid white; background: linear-gradient(45deg, #dc143c, #003893);"></div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <div>
+                    <h5 class="mb-0">Mirai Institute</h5>
+                    <small class="text-muted">Nepal to Japan Specialists</small>
+                </div>
+            </a>
+            
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="courses.html" class="nav-item nav-link active">Gallery</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="team.html" class="dropdown-item">Success Stories</a>
+                            <a href="https://distrya.com/tools/ai-resume-generator" class="dropdown-item" target="_blank" rel="noopener">AI Resume Generator</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
 
-
-                <!-- Language Dropdown -->
-                <div id="google_translate_element"></div>
-
-                <!-- Google Translate Initialization -->
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            { pageLanguage: 'en' }, // Set your default page language
-                            'google_translate_element'
-                        );
-                    }
-                </script>
-                <script
-                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                <!-- Custom CSS -->
-                <style>
-                    #google_translate_element {
-                        margin: 10px 0;
-                        padding: 5px;
-                        text-align: center;
-                        font-size: 20px;
-                        width: 130px;
-                    }
-
-                    #google_translate_element select {
-                        width: 100%;
-                        padding: 5px;
-                        font-size: 14px;
-                    }
-
-                    .goog-te-gadget {
-                        font-size: 0px;
-                    }
-                </style>
-
-
+                    <!-- Language Translator -->
+                    <div id="google_translate_element"></div>
+                </div>
             </div>
         </div>
-
-
     </nav>
-<!-- nav end -->
-<style>
-   
+    <!-- Navbar End -->
 
-    #p-header {
-        background: #4CAF50;
-        color: white;
-        padding: 20px 10%;
-        text-align: center;
-    }
-
-    .containerPriv {
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    #pr-h1{
-        color:#fff;
-    }
-    
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    p {
-        margin: 10px 0;
-    }
-
-    ul {
-        list-style-type: disc;
-        padding-left: 20px;
-    }
-
-
-    .contact {
-        margin-top: 20px;
-    }
-</style>
-<header id = p-header>
-    <h1 id = pr-h1>Gallery</h1>
-    <p></p>
-</header>
-<div class="container my-5">
-    <h1 class="text-center mb-4">Gallery Mirai-Institute</h1>
-    <div class="row g-4">
-      <!-- Gallery Item 1 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" class="card-img-top" alt="Image 1">
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Our Gallery</h1>
+                    <p class="fs-5 text-white mb-4">नेपालबाट जापान यात्राका तस्बिरहरू</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Gallery</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Gallery Item 2 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/hokkaido.jpg" class="card-img-top" alt="Image 2">
-        </div>
-      </div>
-      <!-- Gallery Item 3 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/chairman.jpg" class="card-img-top" alt="Image 3">
-        </div>
-      </div>
-      <!-- Gallery Item 4 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/mirai-circle.png" class="card-img-top" alt="Image 4">
-        </div>
-      </div>
-      <!-- Gallery Item 5 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/tokyo.jpg" class="card-img-top" alt="Image 5">
-        </div>
-      </div>
-      <!-- gallery item 6 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/class1.jpeg" class="card-img-top" alt="Image 5">
-        </div>
-      </div>
-      <!-- gallery item 7 -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card">
-          <img src="img/class2.jpeg" class="card-img-top" alt="Image 5">
-        </div>
-      </div>
     </div>
-  </div>
-<!-- footer start -->
-    <div class="container-fluid bg-black text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- Header End -->
+
+    <!-- Gallery Filter -->
+    <div class="container gallery-filter">
+        <div class="text-center">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="class">Japanese Classes</button>
+            <button class="filter-btn" data-filter="students">Student Success</button>
+            <button class="filter-btn" data-filter="japan">Japan Life</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+    </div>
+
+    <!-- Gallery Start -->
+    <div class="container-xxl py-5 gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title bg-white text-center text-primary px-3 d-inline-block">Photo Gallery</h2>
+                    <h1 class="mb-4">Nepal to Japan Journey in Pictures</h1>
+                    <p class="lead">Explore moments from our Nepalese students' journey to Japan</p>
+                </div>
+            </div>
+
+            <!-- Japanese Language Classes -->
+            <div class="gallery-category">
+                <h3 class="text-primary mb-4"><i class="fas fa-language me-2"></i> Japanese Language Classes</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="class">
+                        <img src="img/class1.jpeg" alt="Japanese language class for Nepalese students" loading="lazy">
+                        <div class="gallery-badge">Classroom</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Beginner Japanese Class</h5>
+                            <p class="small mb-0">Nepalese students learning basic Japanese</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="class">
+                        <img src="img/class2.jpeg" alt="Interactive Japanese learning session" loading="lazy">
+                        <div class="gallery-badge">Interactive</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Interactive Session</h5>
+                            <p class="small mb-0">Students practicing Japanese conversation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="class">
+                        <img src="img/teach.jpg" alt="Japanese instructor teaching Nepalese students" loading="lazy">
+                        <div class="gallery-badge">Expert Teaching</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Expert Instruction</h5>
+                            <p class="small mb-0">Certified Japanese teacher guiding students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Success Stories -->
+            <div class="gallery-category mt-5">
+                <h3 class="text-primary mb-4"><i class="fas fa-graduation-cap me-2"></i> Student Success Stories</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="students">
+                        <img src="img/bishwo.jpg" alt="Managing Director guiding students" loading="lazy">
+                        <div class="gallery-badge">Guidance</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Personal Guidance</h5>
+                            <p class="small mb-0">One-on-one counseling for Japan opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="students">
+                        <img src="img/black-white-portrait-friends.jpg" alt="Group of successful students" loading="lazy">
+                        <div class="gallery-badge">Group Study</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Study Group</h5>
+                            <p class="small mb-0">Nepalese students preparing together for Japan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="students">
+                        <img src="img/IMG_0475.jpeg" alt="Vice Chairman with students" loading="lazy">
+                        <div class="gallery-badge">Leadership</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Expert Leadership</h5>
+                            <p class="small mb-0">Guiding students toward Japan success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Japan Life & Culture -->
+            <div class="gallery-category mt-5">
+                <h3 class="text-primary mb-4"><i class="fas fa-globe-asia me-2"></i> Japan Life & Culture</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="japan">
+                        <img src="img/tokyo.jpg" alt="Tokyo cityscape for Nepalese students" loading="lazy">
+                        <div class="gallery-badge">Tokyo</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Tokyo - Study Destination</h5>
+                            <p class="small mb-0">Top choice for Nepalese students in Japan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="japan">
+                        <img src="img/osaka.jpg" alt="Osaka city for international students" loading="lazy">
+                        <div class="gallery-badge">Osaka</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Osaka - Cultural Hub</h5>
+                            <p class="small mb-0">Popular among Nepalese students in Japan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="japan">
+                        <img src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="Kyoto temple Japanese culture" loading="lazy">
+                        <div class="gallery-badge">Kyoto</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Kyoto - Cultural Heritage</h5>
+                            <p class="small mb-0">Experience traditional Japan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institute & Events -->
+            <div class="gallery-category mt-5">
+                <h3 class="text-primary mb-4"><i class="fas fa-university me-2"></i> Institute & Events</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/mirai-circle.png" alt="Mirai Institute Nepal logo" loading="lazy">
+                        <div class="gallery-badge">Our Institute</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Mirai Institute Nepal</h5>
+                            <p class="small mb-0">Your gateway from Nepal to Japan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/chairman.jpg" alt="Chairman vision and guidance" loading="lazy">
+                        <div class="gallery-badge">Leadership</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Inspiring Leadership</h5>
+                            <p class="small mb-0">Guiding Nepalese students to Japan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/hokkaido.jpg" alt="Japanese cultural event" loading="lazy">
+                        <div class="gallery-badge">Culture</div>
+                        <div class="gallery-caption">
+                            <h5 class="mb-1">Cultural Exchange</h5>
+                            <p class="small mb-0">Nepal-Japan cultural understanding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Success Stories CTA -->
+    <div class="container-xxl py-5" style="background: linear-gradient(135deg, #dc143c, #003893);">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">See More Success Stories</h2>
+            <p class="text-white mb-5">Read about Nepalese students who successfully made it to Japan</p>
+            <a href="team.html" class="btn btn-light btn-lg px-5">
+                <i class="fas fa-book-open me-2"></i>View Success Stories
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="container-fluid text-light footer pt-5 mt-5 wow fadeIn footer-nepal" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="help.html">FAQs & Help</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Itahari, Sunsari Nepal</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9862399594</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+81 080-1502-9162</p>
-                    <p class="mb-2 d-flex"><i class="fa fa-envelope me-3"></i>miraiinstitueoflanguage@gmail.com</p>
-
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/beautiful-kyoto-city-temple-twilight-japan.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/osaka.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/bishwo.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/tokyo.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/black-white-portrait-friends.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="img/mirai-circle.png" alt="Mirai Institute Nepal Logo" width="60" class="me-3">
+                        <div>
+                            <h4 class="text-white mb-0">Mirai Institute Nepal</h4>
+                            <small class="text-muted">Japan Specialists for Nepalese Students</small>
                         </div>
                     </div>
+                    <div class="nepal-office mb-4" style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #dc143c;">
+                        <h6 class="text-white mb-3"><i class="fas fa-map-marker-alt me-2"></i> Nepal Office</h6>
+                        <p class="text-muted mb-2">Itahari, Sunsari, Nepal</p>
+                        <p class="text-muted mb-2">Phone: +977-9862399594</p>
+                        <p class="text-muted mb-0">Email: miraiinstituteoflanguage@gmail.com</p>
+                    </div>
                 </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="index.html">Home</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="about.html">About Us</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="courses.html">Gallery</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="team.html">Success Stories</a>
+                </div>
+                
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Social Media</h4>
-                    <p>Join us on Social Media for Latest News and Information</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://x.com/institutemirai?s=21"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61572012297666"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://line.me/ti/p/Dq2FYPtMqz"><i class="fab fa-line"></i></a>
+                    <h5 class="text-white mb-4">Important Links</h5>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="terms.html">Terms & Conditions</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link text-muted mb-2 d-block" href="https://distrya.com/tools/ai-resume-generator" target="_blank" rel="noopener">AI Resume Generator</a>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Career Support</h5>
+                    <div class="mb-4">
+                        <a href="https://distrya.com/tools/ai-resume-generator" class="btn btn-outline-light w-100 mb-2 d-flex align-items-center justify-content-center" target="_blank" rel="noopener">
+                            <i class="fas fa-robot me-2"></i> AI Japan Resume
+                        </a>
+                        <a href="team.html" class="btn btn-outline-light w-100 mb-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-users me-2"></i> Nepali Success Stories
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-headset me-2"></i> Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5" style="border-color: #444;">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 Mirai Institute Nepal. All rights reserved. 
+                        <span class="nepali-font">नेपालबाट जापान अध्ययन र रोजगारीको लागि विश्वसनीय संस्था</span>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-inline">
+                        <a href="privacy.html" class="text-muted me-3">Privacy Policy</a>
+                        <a href="terms.html" class="text-muted me-3">Terms & Conditions</a>
+                        <a href="sitemap.html" class="text-muted">Sitemap</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        Copyright&copy; 2024 <a class="border-bottom" href="#"> Mirai Institute of Language</a>, All Right
-                        Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="index.html">Home</a>
-                            <a href="privacy.html">Privacy & Policy</a>
-                            <a href="help.html">Help & FQAs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -293,6 +501,44 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Gallery Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
